@@ -22,6 +22,7 @@
     "plugins": [
         "react"
     ],
+    "ignorePatterns": ["*.test.js", "serviceWorker.js", "Routes.jsx"],
     "rules": {
     }
 }
