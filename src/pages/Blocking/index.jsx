@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Prompt from 'react-router-dom/es/Prompt';
+import { Prompt } from 'react-router-dom';
 
 
 export default function Blocking() {
@@ -35,7 +35,7 @@ export default function Blocking() {
       </p>
 
       <p>
-        <button>Submit to stop blocking</button>
+        <button type="button">Submit to stop blocking</button>
       </p>
     </form>
   );
