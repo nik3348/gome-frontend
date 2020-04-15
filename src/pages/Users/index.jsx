@@ -30,7 +30,8 @@ export default function Users() {
       .then((res) => res.json())
       .then(
         (result) => {
-          setData(result);
+          if (result !== null) setData(result);
+          else setData([]);
         },
         // Note: it's important to handle errors here
         // instead of a catch() block so that we don't swallow
