@@ -1,6 +1,6 @@
 {
-  "createUser": "/",
-  "saveAvatar": "/avatar",
-  "getUser": "/",
-  "getAll": "/all"
+  "getUsers": "",
+  "getUserById": "/",
+  "postUser": "/",
+  "saveAvatar": "/avatar"
 }

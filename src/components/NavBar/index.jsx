@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 export default function NavBar() {
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
-      <Navbar.Brand as={Link} to="/">React-Bootstrap</Navbar.Brand>
+      <Navbar.Brand as={Link} to="/">GoMe</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">

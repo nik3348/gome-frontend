@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Table from 'react-bootstrap/Table';
 import { url } from '../../config/env';
-import { getAll } from '../../api/Endpoints.json';
+import { getUsers } from '../../api/Endpoints.json';
 
 export default function Users() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -10,16 +10,16 @@ export default function Users() {
 
   const row = data.map((datum) => (
     <tr>
-      <td>{datum.id}</td>
+      <td>{datum.uid}</td>
       <td>{datum.name}</td>
       <td>{datum.email}</td>
-      <td>{datum.username}</td>
+      <td>{datum.cid}</td>
     </tr>
   ));
 
   useEffect(() => {
     fetch(
-      url + getAll,
+      url + getUsers,
       {
         method: 'GET',
         headers: {
@@ -51,7 +51,7 @@ export default function Users() {
             <th>#</th>
             <th>First Name</th>
             <th>Last Name</th>
-            <th>Username</th>
+            <th>Course ID</th>
           </tr>
         </thead>
         <tbody>
